@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="input1">
+  <input id="input2">
+  <button onclick="suma()" id="botonsum">suma</button>
+  <button onclick="resta()" id="botonres">resta</button>
+  <button onclick="multiplicacion()" id="botonmul">multiplicacion</button>
+  <button onclick="division()" id="botondiv">division</button>
+
+  <div id="div1"></div>
+  <script>
+    function suma(n1=Number(document.getElementById("input1").value),n2=Number(document.getElementById("input2").value)){
+      let resultado=n1+n2;
+      document.getElementById("div1").innerHTML=resultado;
+    }
+    function resta(n1=Number(document.getElementById("input1").value),n2=Number(document.getElementById("input2").value)){
+      let resultado=n1-n2;
+      document.getElementById("div1").innerHTML=resultado;
+    }
+    function multiplicacion(n1=Number(document.getElementById("input1").value),n2=Number(document.getElementById("input2").value)){
+      let resultado=n1*n2
+      document.getElementById("div1").innerHTML=resultado;
+    }
+    function division(n1=Number(document.getElementById("input1").value),n2=Number(document.getElementById("input2").value)){
+      let resultado=n1/n2;
+      document.getElementById("div1").innerHTML=resultado;
+    }
+  </script>
+  
+</body>
+</html>
